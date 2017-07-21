@@ -19,5 +19,5 @@ run:
   - -exc
   - |
     cd pal-tracker
-    gradlew -P version=`cat ../version/number` build
+    ./gradlew -P version=`cat ../version/number` build
     cp build/libs/pal-tracker-*.jar ../build-output
