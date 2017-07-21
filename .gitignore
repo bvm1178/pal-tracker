@@ -3,3 +3,8 @@ build
 .idea
 *.iml
 ci/credentials.yml
+bin
+.classpath
+.project
+tmp
+.settings
