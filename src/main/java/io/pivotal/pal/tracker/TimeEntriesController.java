@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/timeEntries")
 public class TimeEntriesController {
 	
-	private static final ResponseEntity<TimeEntry> NOT_FOUND_RESPONSE = new ResponseEntity<TimeEntry>(HttpStatus.NOT_FOUND);
+	private static final ResponseEntity<TimeEntry> NOT_FOUND_RESPONSE = new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
 	private final TimeEntryRepository timeEntryRepository;
 	
