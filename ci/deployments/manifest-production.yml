@@ -3,3 +3,5 @@ applications:
 - name: pal-tracker-production
   path: ../../build/libs/pal-tracker.jar
   host: vbaran-pal-tracker-production
+  env:
+    SECURITY_FORCE_HTTPS: true
