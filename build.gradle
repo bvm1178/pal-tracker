@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-    	classpath("gradle.plugin.com.boxfuse.client:flyway-release:4.2.0")
+        classpath("gradle.plugin.com.boxfuse.client:flyway-release:4.2.0")
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE")
     }
 }
