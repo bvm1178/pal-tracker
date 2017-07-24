@@ -10,7 +10,6 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.ResultSetExtractor;
@@ -22,7 +21,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
 	private static final ResultSetExtractor<List<TimeEntry>> ENTRIES_EXTRACTOR = new ResultSetExtractor<List<TimeEntry>>() {
 
 		@Override
-		public List<TimeEntry> extractData(ResultSet resutSet) throws SQLException, DataAccessException {
+		public List<TimeEntry> extractData(ResultSet resutSet) throws SQLException {
 			List<TimeEntry> entries = new ArrayList<>();
 			
 			while (resutSet.next()) {
